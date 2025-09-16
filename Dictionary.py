@@ -11,9 +11,15 @@ for x in range (matrix):
 
     print (mydict)
 while(True):
-    opt = input("What would you like to do [C]hange items [R]emove [D]isplay  S[earch] ? ").upper()
+    opt = input("What would you like to do [A]dd items [C]hange items [R]emove [D]isplay  S[earch] ? ").upper()
     
     match opt:
+
+        case 'A':
+            addVal = input("Add an item:")
+            addKey = input("add in what key?: ")
+            mydict[addKey] = addVal
+
         case 'C':
             changeKey = int (input("Enter key to change value:"))
             if changeKey in mydict:
@@ -22,8 +28,6 @@ while(True):
                 mydict[changeKey] = changeVal
             else:
                  print("I'm sorry, not in the cart")
-
-
 
         case 'R':
             DelKey = int (input("Enter a key you want to delete:"))
