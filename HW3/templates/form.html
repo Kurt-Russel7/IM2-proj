@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-top: 10px;
+        }
+       select {
+        width: 200px;
+        padding: 5px;
+       }
+       .radio-group {
+        margin-top: 10px;
+       }
+       .btn {
+        margin-top: 20px;
+        padding: 8px 20px;
+        background-color: rgb(9, 72, 72);
+        color: white;
+        border: none;
+        cursor: pointer;
+       }
+    </style>
+
+</head>
+<body>
+    <h2>Social Media Profile</h2>
+
+    <form action="/profile" method="post">
+        <label> First Name:</label>
+        <input type="text" name="FirstName">
+        <br>
+
+        <label> Last Name:</label>
+        <input type="text" name="LastName">
+        <br>
+
+        <label>Sex: </label>
+        <div class="radio-group">
+            <input type="radio" name="sex" value="Male">Male
+            <input type="radio" name="sex" value="Female">Female
+        </div>
+
+        <label>Status:</label>
+        <input type="text" name="status">
+        <br>
+
+        <label>Location:</label>
+        <input type="text" name="location">
+        <br>
+
+        <button class="btn" type="submit">Create Profile</button>
+    </form> 
+
+
+    
+</body>
+</html>
